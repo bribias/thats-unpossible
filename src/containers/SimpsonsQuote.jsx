@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Load from '../components/quote/Load';
 import Quote from '../components/quote/Quote';
 import { fetchQuotes } from '../services/simpsonsAPI';
 
-const SimpsonQuote = () => {
+const SimpsonsQuote = () => {
     const [quote, setQuote] = useState(null);
     const [loading, setLoading] = useState(false);
 
@@ -33,4 +33,4 @@ const SimpsonQuote = () => {
     );
 };
 
-export default SimpsonQuote;
+export default SimpsonsQuote;
