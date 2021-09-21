@@ -10,7 +10,7 @@ const SimpsonsQuote = () => {
     const handleClick = async () => {
         setLoading(true);
 
-        const quote = fetchQuotes();
+        const quote = await fetchQuotes();
         setQuote(quote);
         setLoading(false);
     };
@@ -19,7 +19,9 @@ const SimpsonsQuote = () => {
         <>
             <Load onClick={handleClick} />
             {loading ? (
-                <img src="https://media3.giphy.com/media/DopPsBP7cStO/giphy.gif" alt="bart-loading-spinner" />
+                <img
+                    // eslint-disable-next-line max-len
+                    src="https://data.photofunky.net/output/image/5/3/8/7/538748/photofunky.gif" alt="bart-loading-spinner" />
             ) : (
                 quote && (
                     <Quote
