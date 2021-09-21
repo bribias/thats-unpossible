@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 
 const Load = ({ onClick }) => (
     <button onClick={onClick}
-        aria-label='quote-button'>
-        Load Quote
+        aria-label="quote-button">
+        PUSH FOR QUOTE
     </button>
 );
 
-Load.PropTypes = {
+Load.propTypes = {
     onClick: PropTypes.func.isRequired,
 };
 
